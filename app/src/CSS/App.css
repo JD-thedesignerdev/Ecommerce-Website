@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* color-scheme: light dark; */
+  --bgColor: rgba(30, 60, 120, 0.1);
+  --x: 0;
+  --y: 0;
+}
+
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../public/assets/Montserrat/static/Montserrat-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  ;
+}
+
+button,
+a {
+  cursor: pointer;
+
+}
+
+a,
+li {
+  text-decoration: none;
+}
+
+body {
+  /* Montserrat without quotes actually works */
+  /* background: #fff; */
+  /* background: rgba(0, 60, 120, 0.1); */
+  background: #fff;
+  /* color: #000; */
+  font-family: Montserrat, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}
+
+.basic-button {
+  background: #fff;
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  transition: all 500ms;
+}
+
+.basic-button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

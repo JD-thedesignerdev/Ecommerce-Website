@@ -1,0 +1,35 @@
+.Cart {
+    margin-top: 90px;
+    height: 100svh;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    /* justify-content: center; */
+    flex-direction: column;
+    background: #fff;
+}
+
+.Cart header {
+    margin-left: 25px;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.Cart img {
+    width: 228px;
+    height: 228px;
+
+}
+
+.cartDisplayContainer {
+    display: flex;
+    border: 1px solid #000;
+    width: 700px;
+    height: 402px;
+    margin: 25px;
+
+}
+
+footer {
+    width: 100%;
+}

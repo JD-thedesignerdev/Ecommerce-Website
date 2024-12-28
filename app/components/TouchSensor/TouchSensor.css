@@ -1,0 +1,16 @@
+.touchSensor {
+    display: flex;
+    width: 420px;
+    height: 400px;
+}
+
+.sensor-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sensorBox {
+    width: calc(420px/3);
+    height: calc(400px/3);
+    z-index: 2;
+}

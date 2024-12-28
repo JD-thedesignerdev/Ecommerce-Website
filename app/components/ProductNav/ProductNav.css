@@ -1,0 +1,10 @@
+.productNav ul {
+    display: flex;
+    flex-direction: row;
+    /* width: 800px; */
+    color: rgb(0, 120, 180);
+    position: fixed;
+    bottom: 30px;
+    opacity: 0.5;
+    z-index: 2;
+}

@@ -1,0 +1,32 @@
+.offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-texts {
+    background: rgba(0, 120, 180, 0.1);
+    border-radius: 10px;
+    border: 1px solid #000;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: wrap;
+    justify-content: space-evenly;
+}
+
+.offer-texts p {
+    line-height: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+.offer-texts button {
+    border: 1px solid #000;
+    transition: 500ms;
+}
+
+.offer-texts button:hover {
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}

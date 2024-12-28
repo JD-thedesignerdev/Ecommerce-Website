@@ -1,0 +1,121 @@
+.SignUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    width: 100%
+}
+
+.SignUp-container {
+    position: relative;
+    margin-top: 90px;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    height: 600px;
+    width: 50%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.SignUp-container form {
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px;
+    height: 80%;
+    width: calc(100% - 100px);
+
+
+}
+
+.field-password,
+.field-name,
+.field-email,
+.SignUp-agree {
+    margin: 40px;
+}
+
+.field-password,
+.field-name,
+.field-email {
+    position: relative;
+    transition: all 250ms;
+}
+
+.field-password input,
+.field-name input,
+.field-email input {
+    border-width: 0px 0px 0px;
+    border-bottom: 1px solid rgb(0, 120, 180);
+    background: transparent;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+}
+
+.field-password input::placeholder,
+.field-name input::placeholder,
+.field-email input::placeholder {
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.field-password label,
+.field-name label,
+.field-email label {
+    position: absolute;
+    left: 10px;
+    top: -20px;
+
+}
+
+
+.field-password input:invalid,
+.field-name input:invalid,
+.field-email input:invalid {
+    border-bottom: 1px solid red;
+}
+
+
+
+.SignUp-agree {
+    align-self: start;
+    display: flex;
+
+}
+
+.SignUp-agree span {
+    color: rgb(0, 120, 180);
+}
+
+.SignUp-agree input {
+    margin-right: 10px;
+}
+
+.SignUp-container form button {
+    margin-top: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.SignUp-container form button:hover {
+    color: rgb(0, 120, 180);
+    box-shadow: 0px 4px 4px 0px rgba(0, 120, 180, 0.25);
+    border: 1px solid rgba(0, 120, 180, 0.5);
+}
+
+.SignUp-container form p {
+    text-align: center;
+}
+
+.SignUp-login span {
+    color: rgb(0, 120, 180);
+
+}

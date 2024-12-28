@@ -1,0 +1,16 @@
+.Cursor[data-style="bigBlue"] {
+    position: fixed;
+    /* change positioning later */
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(rgbA(0, 120, 180, 0.5), transparent 99%);
+    border-radius: 50%;
+    /* filter: blur(4px); */
+    box-shadow:
+        5px 5px 10px rgba(0, 120, 180, 0.5),
+        -5px -5px 10px rgba(0, 120, 180, 0.5);
+    z-index: -1;
+}

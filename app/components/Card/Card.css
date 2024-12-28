@@ -1,0 +1,57 @@
+.card-container {
+    position: relative;
+    margin: 10px;
+    height: 310px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    background: rgba(0, 120, 180, 0.1);
+    border-radius: 10px;
+    /* transition: 250ms; */
+}
+
+/* .card-container:hover {
+    border: 1px solid rgba(0, 120, 180, 1);
+} */
+
+.card-container button {
+    margin: 10px;
+    border-radius: 5px;
+    width: 100px;
+    background: rgba(0, 120, 180, 0.1);
+    border: 1px solid var(--secondary);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: default;
+}
+
+
+.pic,
+.img-filter {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 150px;
+    height: 234.683px;
+    border-radius: 10px;
+}
+
+.pic {
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.img-filter[data-active="true"] {
+    opacity: 0;
+    filter: invert(100%);
+    z-index: 2;
+    /* it has to specifically have theses letters(because of my targetElem function) and must be capital case */
+    clip-path: circle(25px at var(--X) var(--Y));
+}
+
+.img-filter:hover {
+    opacity: 1;
+}

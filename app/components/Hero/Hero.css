@@ -1,0 +1,143 @@
+@keyframes slide {
+    from {
+        transform: translateY(-1000px);
+        opacity: 0.5;
+    }
+}
+
+
+
+/* Cards */
+.Card1 {
+    position: absolute;
+    Top: 437.97px;
+    Left: 713.23px;
+
+}
+
+.Card1 {
+    position: absolute;
+    Top: 537.97px;
+    Left: 713.23px;
+
+}
+
+.Card2 {
+    position: absolute;
+    top: 259px;
+    left: 575.45px;
+
+}
+
+.Card3 {
+    position: absolute;
+    top: -59px;
+    left: 650px;
+
+}
+
+.Card4 {
+    position: absolute;
+    top: 80px;
+    left: 880.45px;
+
+}
+
+.Card5 {
+    position: absolute;
+    top: 319px;
+    left: 1047.45px;
+}
+
+.Card6 {
+    position: absolute;
+    Top: -20px;
+    Left: 1230.23px;
+}
+
+.Card1,
+.Card2,
+.Card3,
+.Card4,
+.Card5,
+.Card6 {
+    animation: slide 5s 1;
+    transform: rotate(63.1deg);
+}
+
+
+.hero-left {
+    width: 50%;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* line-height: 50px; */
+    justify-content: space-around;
+}
+
+.hero-left a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hero-left button {
+    transform: translateY(50px);
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.25);
+    transition: 500ms;
+    font-size: larger;
+}
+
+.hero-left button:hover {
+
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.hero-left h2 {
+    margin-top: 15px;
+    font-size: 60px;
+    /* font-weight: 30px; */
+    text-align: center;
+    color: rgba(0, 120, 180);
+}
+
+.hero-left .thin {
+    -webkit-text-stroke: 4px #000;
+    position: relative;
+}
+
+.hero-left .thick {
+    width: 50%;
+    position: absolute;
+    transform: translateY(-100%);
+    margin: 0;
+    z-index: 2;
+
+}
+
+.hero-left p {
+    font-size: 20px;
+
+}
+
+.scroll-block {
+    position: absolute;
+    bottom: 120px;
+
+}
+
+.penCircle {
+    position: absolute;
+    top: 50%;
+    transform: scaleY(0.5) translateY(-25%);
+    z-index: 2;
+}
+
+.hero {
+    z-index: 2;
+}

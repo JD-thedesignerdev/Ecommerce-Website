@@ -1,0 +1,102 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 450;
+    height: 513;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 30px;
+    transition: 500ms ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.item:hover {
+
+    border: 1px solid rgba(0, 0, 0, 1);
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.item-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgFilter {
+    /* making this absolute will for some reason make position it relative to the root parent element .item */
+    position: absolute;
+    filter: invert(100%);
+    opacity: 0;
+}
+
+.imgFilter[data-active="true"] {
+    z-index: 2;
+    /* it has to specifically have theses letters(because of my targetElem function) and must be capital case */
+    clip-path: circle(25px at var(--X) var(--Y));
+}
+
+.img1,
+.imgFilter {
+    border-radius: 10px;
+    width: 420px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.item .img1 {
+    filter: grayscale(100%);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    width: 420px;
+    height: 400px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 15px;
+    transition: all 500ms ease-in-out;
+}
+
+.item h1 {
+    margin: 15px;
+    font-size: 15px;
+}
+
+.item-texts {
+    margin: 0px 15px 15px 15px;
+    display: flex;
+}
+
+.oldPrice {
+    position: relative;
+    margin: 0 10px;
+    opacity: 0.5;
+}
+
+
+/* not working */
+.oldPrice::after {
+    transition: all 250ms;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    opacity: 1;
+    /* text-align: enter; */
+}
+
+/* p:hover .oldPrice:hover .oldPrice {
+    animation: none;
+} */
+
+
+.item:hover .img1 {
+    filter: grayscale(0%);
+}
+
+.item a {
+    text-decoration: none;
+    color: #000;
+}

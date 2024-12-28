@@ -1,0 +1,88 @@
+@keyframes bounceRight {
+
+    /* from {
+            transform: translateX(-0%);
+        } */
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 600px;
+    /* position: sticky;
+    top: 0px; */
+    background: var(--bgColor);
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.banner-img img {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    width: 420px;
+    height: 400px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.banner-texts {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 120, 180, 0.25);
+    background: rgba(255, 255, 255, 0.5);
+    width: calc(fit-content + 30px);
+    height: 400px;
+    padding-left: 30px;
+    justify-content: end;
+
+}
+
+.banner-texts h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.banner-texts p {
+    font-size: 25px;
+    margin-bottom: 10px;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+
+.banner .bgWords {
+    position: absolute;
+    z-index: -1;
+}
+
+.banner-btn {
+    width: fit-content;
+    padding: 15px;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    transition: 500ms;
+    background: transparent;
+}
+
+.banner-btn a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 15px;
+    animation: bounceRight 1s infinite ease-in-out;
+}
+
+.sensor {
+    position: absolute;
+    transform: translateY(-100%);
+}

@@ -1,0 +1,59 @@
+.collection {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    background: #fff;
+    height: 100svh;
+    border-radius: 30px 30px 0px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.collection h1 {
+    position: relative;
+    font-weight: 600px;
+    margin: 25px 15px;
+    font-size: 25px;
+}
+
+/*
+maybe comeback to it
+.collection h2::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+} */
+
+.collection-selections {
+    display: flex;
+    /* overflow-x: scroll; */
+    /* width: 450px;
+    height: 513px; */
+}
+
+.collection-selection-btns button {
+    font-size: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 120, 180, 0);
+    transition: 250ms;
+    z-index: 3;
+}
+
+.collection-selection-btns button:hover {
+    border: 1px solid rgba(0, 120, 180, 1);
+}
+
+.collection-selection-btns {
+    width: 100%;
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+
+}

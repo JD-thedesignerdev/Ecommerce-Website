@@ -1,0 +1,95 @@
+.login {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    border-radius: 30px;
+    margin-top: 90px;
+    height: 400px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    height: 600px;
+    width: 50%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+.login-container h1 {
+    margin: 20px;
+}
+
+.login-container form {
+    margin: 60px;
+    width: calc(100% - 100px);
+}
+
+.login-email,
+.login-password {
+    margin: 40px;
+}
+
+.login-password,
+.login-email {
+    position: relative;
+    transition: all 250ms;
+}
+
+.login-password input,
+.login-email input {
+    border-width: 0px 0px 0px;
+    border-bottom: 1px solid rgb(0, 120, 180);
+    background: transparent;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+}
+
+.login-password input::placeholder,
+.login-email input::placeholder {
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.login-password label,
+.login-email label {
+    position: absolute;
+    left: 10px;
+    top: -20px;
+
+}
+
+
+.login-password input:invalid,
+.login-email input:invalid {
+    border-bottom: 1px solid red;
+}
+
+
+.login-question {
+    text-align: center;
+}
+
+.login-question span {
+    color: rgb(0, 120, 180);
+}
+
+.login-container form button {
+    margin-top: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login-container form button:hover {
+    color: rgb(0, 120, 180);
+    box-shadow: 0px 4px 4px 0px rgba(0, 120, 180, 0.25);
+    border: 1px solid rgba(0, 120, 180, 0.5);
+}
