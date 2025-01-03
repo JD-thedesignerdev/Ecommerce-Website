@@ -1,2 +1,2 @@
 # Ecommerce-Web
-Ecommerce Website
+Ecommerce Website called E-shop
